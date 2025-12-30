@@ -3,12 +3,26 @@
 this repository was created for investing about types of entities render in Minecraft bedrock.
 
 when i refer to "types of entities render", i refer to this one:
+
+> [!warning]
+> Diagram only show on GitHub web :(
 ```mermaid
 ---
 title: My entity render
 ---
 flowchart TB;
-A[br:my_entity_render] -->|Creating my custom entity properties, like materials and render_controllers| B & C;
+A[br:my_entity_render] -->|Creating my custom entity properties, like materials and render_controllers| B[minecraft:entity_client];
+B --> C(materials) & D(render_controllers);
+D -->|You define what part of your GEO set the render type| E[e_render.render_controllers.json];
+E ==> B;
+C -->|You chose what type of render uses for your entity| F[Types of entity render];
+G(entity.material);
+F ==>|entity_custom| G;
+F ==>|entity_alphatest| G;
+F ==>|entity_emissive| G;
+F ==>|entity_alphablend| G;
+G -->|In entity.material exists more of entity render...| H(The material properties exists in shaders/entity.fragment.h and shaders/entity.vertex.h);
+
 ```
 
 ```json
