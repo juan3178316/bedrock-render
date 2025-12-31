@@ -21,7 +21,7 @@ F ==>|entity_custom| G;
 F ==>|entity_alphatest| G;
 F ==>|entity_emissive| G;
 F ==>|entity_alphablend| G;
-G -->|In entity.material exists more of entity render...| H(The material properties exists in shaders/entity.fragment.h and shaders/entity.vertex.h);
+G -->|In entity.material exists more of entity render...| H(The material properties exists in shaders/entity.fragment and shaders/entity.vertex);
 
 ```
 
