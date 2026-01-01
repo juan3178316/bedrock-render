@@ -1,11 +1,18 @@
 # Bedrock Render
+<details>
+<summary>Table of contents (Click to show)</summary>
 
++ [Bedrock Render](#bedrock-render)
++ [Entity render Diagram](#entity-render-diagram)
++ [1. Entity Client Components](#1-entity-client-components)
+</details>
 this repository was created for investing about types of entities render in Minecraft bedrock.
 
 when i refer to "types of entities render", i refer to this one:
 
 > [!warning]
 > Diagram only show on GitHub web :(
+## Entity render Diagram
 ```mermaid
 ---
 title: My entity render
@@ -25,6 +32,9 @@ G -->|In entity.material exists more of entity render...| H(The material propert
 
 ```
 
+an example about the diagram:
+
+## 1. Entity Client Components
 ```json
 {
 	"format_version": "1.10.0",
@@ -35,10 +45,12 @@ G -->|In entity.material exists more of entity render...| H(The material propert
 				"default": "entity_alphatest"
 			},
 // ...
+			"render_controllers": [ "controller.render.my_entity_render" ],
 		}
 	}
 }
 ```
+in this JSON file define the entity client components like texturing, geometry, etc, but the important now is `materials` and `render_controllers`.
 
 > [!NOTE]
 > Comming soon add further information.
