@@ -5,6 +5,7 @@
 + [Bedrock Render](#bedrock-render)
 + [Entity render Diagram](#entity-render-diagram)
 + [1. Entity Client Components](#1-entity-client-components)
+  + [1.1 Entity Material](#11-entity-material)
 </details>
 this repository was created for investing about types of entities render in Minecraft bedrock.
 
@@ -51,6 +52,8 @@ an example about the diagram:
 }
 ```
 in this JSON file define the entity client components like texturing, geometry, etc, but the important now is `materials` and `render_controllers`.
+
+### 1.1. Entity Material
 
 > [!NOTE]
 > Comming soon add further information.
