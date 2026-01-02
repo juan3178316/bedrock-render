@@ -54,6 +54,19 @@ an example about the diagram:
 in this JSON file define the entity client components like texturing, geometry, etc, but the important now is `materials` and `render_controllers`.
 
 ### 1.1. Entity Material
+The entity material is how the entity rendering in-game, like emitter parts or all of her texture, else that the entity texture have opacity (transparent) and many types of renders defined in [entity.material.json | README.md](./materials/readme.md)
+
+examples of renders:
+- Emissive
+<img width="295" height="463" alt="my_entity_render-emissive" src="https://github.com/user-attachments/assets/484dea4a-ac7d-44e5-9caf-309507ccae7d"/>
+
+- alphablend
+> [!CAUTION]
+> image not found :(
+
+- entity_custom
+<img width="267" height="399" alt="my_entity_render-entity_custom" src="https://github.com/user-attachments/assets/53058e32-bdef-4080-bad2-b72e7f262b87"/>
+</br>
 
 > [!NOTE]
 > Comming soon add further information.
