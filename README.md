@@ -20,8 +20,6 @@ title: My entity render
 flowchart TB;
 A[br:my_entity_render] -->|Creating my custom entity properties, like materials and render_controllers| B[minecraft:entity_client];
 B --> C(materials) & D(render_controllers);
-D -->|You define what part of your GEO set the render type| E[e_render.render_controllers.json];
-E ==> B;
 C -->|You chose what type of render uses for your entity| F[Types of entity render];
 G(entity.material);
 F ==>|entity_custom| G;
@@ -30,6 +28,8 @@ F ==>|entity_emissive| G;
 F ==>|entity_alphablend| G;
 G -->|In entity.material exists more of entity render...| H(The material properties exists in shaders/entity.fragment and shaders/entity.vertex);
 
+D -->|You define what part of your GEO set the render type| E[e_render.render_controllers.json];
+E ==> B;
 ```
 
 an example about the diagram:
