@@ -2,7 +2,7 @@
 the properties created in the files [entity.fragment](entity.fragment.h) and [entity.vertex](entity.vertex.h) are used for [entity.material](../materials/entity.material.json)
 
 > [!IMPORTANT]
-> idk if the `entity.fragment` and `entity.vertex` are programmed in C
+> idk if the `entity.fragment` and `entity.vertex` are programmed in C or another languages
 
 
 get the property values defined in [entity.material](../materials/entity.material.json) like:
